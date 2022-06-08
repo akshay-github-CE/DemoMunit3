@@ -7,7 +7,7 @@ pipeline
         stage('SonarQube analysis') {
             steps {
             withSonarQubeEnv('SonarQube') {
-            bat 'mvn sonar:sonar -Dsonar.sources=src/ -Dsonar.host.url=http://localhost:9000 -Dsonar.login=c91a76d35e003f1d1af99856195a65522c327514'
+            bat 'mvn sonar:sonar -Dsonar.sources=src/ -Dsonar.host.url=http://localhost:9000 -Dsonar.login=802e819dd1c88aa5eb4814915c233e9998aa48e6'
             }
             }
             }
